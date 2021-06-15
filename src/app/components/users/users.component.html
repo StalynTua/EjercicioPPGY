@@ -1,0 +1,9 @@
+<h3>Lista de Usuarios</h3>
+
+    <ul  *ngFor="let usuario of usuarios">
+        
+        <a   [routerLink]="['info', usuario.id]" style="text-decoration: none;"> {{usuario.nombre}} {{usuario.apellido}}</a>
+        
+    </ul>
+
+

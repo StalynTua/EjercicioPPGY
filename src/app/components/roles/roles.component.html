@@ -1,0 +1,7 @@
+<h3>Lista de Roles</h3>
+
+    <ul  *ngFor="let rol of roles">
+        
+        <a  [routerLink]="['info', rol.id]" style="text-decoration: none;"> {{rol.rol}} </a>
+        
+    </ul>
